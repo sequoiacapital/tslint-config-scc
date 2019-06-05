@@ -10,18 +10,18 @@ import {ExtendedMetadata} from '../utils/ExtendedMetadata';
 export class Rule extends Lint.Rules.AbstractRule {
 
   public static metadata: ExtendedMetadata = {
-    'ruleName': 'react-tsx-curly-spacing',
-    'type': 'style',
-    'description': 'Consistently use spaces around the brace characters of JSX attributes.',
-    'options': null,
-    'optionsDescription': '',
-    'typescriptOnly': true,
-    'issueClass': 'Non-SDL',
-    'issueType': 'Warning',
-    'severity': 'Low',
-    'level': 'Opportunity for Excellence',
-    'recommendation': 'false,',
-    'group': 'Deprecated',
+    ruleName: 'react-tsx-curly-spacing',
+    type: 'style',
+    description: 'Consistently use spaces around the brace characters of JSX attributes.',
+    options: null,
+    optionsDescription: '',
+    typescriptOnly: true,
+    issueClass: 'Non-SDL',
+    issueType: 'Warning',
+    severity: 'Low',
+    level: 'Opportunity for Excellence',
+    recommendation: 'false,',
+    group: 'Deprecated',
   };
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {

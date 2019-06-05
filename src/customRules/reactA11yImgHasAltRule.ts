@@ -34,19 +34,19 @@ Remove role='presentation' or specify 'alt' attribute to be empty when role attr
  */
 export class Rule extends Lint.Rules.AbstractRule {
   public static metadata: ExtendedMetadata = {
-    'ruleName': 'react-a11y-img-has-alt',
-    'type': 'maintainability',
-    'description': 'Enforce that an img element contains the non-empty alt attribute. ' +
+    ruleName: 'react-a11y-img-has-alt',
+    type: 'maintainability',
+    description: 'Enforce that an img element contains the non-empty alt attribute. ' +
     'For decorative images, using empty alt attribute and role="presentation".',
-    'options': 'string[]',
-    'optionsDescription': '',
-    'optionExamples': ['true', '[true, ["Image"]]'],
-    'typescriptOnly': true,
-    'issueClass': 'Non-SDL',
-    'issueType': 'Warning',
-    'severity': 'Important',
-    'level': 'Opportunity for Excellence',
-    'group': 'Accessibility',
+    options: 'string[]',
+    optionsDescription: '',
+    optionExamples: ['true', '[true, ["Image"]]'],
+    typescriptOnly: true,
+    issueClass: 'Non-SDL',
+    issueType: 'Warning',
+    severity: 'Important',
+    level: 'Opportunity for Excellence',
+    group: 'Accessibility',
   };
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {

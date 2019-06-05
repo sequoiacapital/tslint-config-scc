@@ -5,14 +5,14 @@ import * as ts from 'typescript';
 export class Rule extends Lint.Rules.AbstractRule {
   /* tslint:disable:object-literal-sort-keys */
   public static metadata: Lint.IRuleMetadata = {
-    'ruleName': 'import-type-order',
-    'description': 'Improves readability and organization by grouping related imports together. Imports should be listed in order of: external modules, absolute paths, relative paths, relative siblings.',
-    'hasFix': false,
-    'optionsDescription': 'Not configurable.',
-    'options': null,
-    'optionExamples': null,
-    'type': 'style',
-    'typescriptOnly': true,
+    ruleName: 'import-type-order',
+    description: 'Improves readability and organization by grouping related imports together. Imports should be listed in order of: external modules, absolute paths, relative paths, relative siblings.',
+    hasFix: false,
+    optionsDescription: 'Not configurable.',
+    options: null,
+    optionExamples: null,
+    type: 'style',
+    typescriptOnly: true,
   };
   /* tslint:enable:object-literal-sort-keys */
 

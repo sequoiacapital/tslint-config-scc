@@ -44,7 +44,7 @@ export default {
   // Requires any function or method that returns a promise to be marked async.
   'promise-function-async': false,
   // Requires type definitions to exist.
-  'typedef': false,
+  typedef: false,
   // Requires or disallows whitespace for type definitions.
   'typedef-whitespace': [true, typedefWhitespaceLeft, typedefWhitespaceRight],
   // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.

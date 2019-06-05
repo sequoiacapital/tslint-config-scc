@@ -1,8 +1,5 @@
 {
   "extends": [
      "./build/base"
-  ],
-  "rules": {
-    "object-literal-key-quotes": [true, "always"]
-  }
+  ]
 }

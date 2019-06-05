@@ -16,18 +16,18 @@ export interface Exception {
 export class Rule extends Lint.Rules.AbstractRule {
 
   public static metadata: ExtendedMetadata = {
-    'ruleName': 'react-no-dangerous-html',
-    'type': 'maintainability',
-    'description': 'Do not use React\'s dangerouslySetInnerHTML API.',
-    'options': null,
-    'optionsDescription': '',
-    'typescriptOnly': true,
-    'issueClass': 'SDL',
-    'issueType': 'Error',
-    'severity': 'Critical',
-    'level': 'Mandatory',
-    'group': 'Security',
-    'commonWeaknessEnumeration': '79, 85, 710',
+    ruleName: 'react-no-dangerous-html',
+    type: 'maintainability',
+    description: 'Do not use React\'s dangerouslySetInnerHTML API.',
+    options: null,
+    optionsDescription: '',
+    typescriptOnly: true,
+    issueClass: 'SDL',
+    issueType: 'Error',
+    severity: 'Critical',
+    level: 'Mandatory',
+    group: 'Security',
+    commonWeaknessEnumeration: '79, 85, 710',
   };
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {

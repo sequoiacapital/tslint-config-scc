@@ -6,11 +6,11 @@ export default {
   // Enforces a threshold of cyclomatic complexity.
   'cyclomatic-complexity': false,
   // Warns when deprecated APIs are used.
-  'deprecation': true,
+  deprecation: true,
   // Ensures the file ends with a newline.
-  'eofline': true,
+  eofline: true,
   // Enforces indentation with tabs or spaces.
-  'indent': [true, 'spaces', 2],
+  indent: [true, 'spaces', 2],
   // Enforces a consistent linebreak style.
   'linebreak-style': false,
   // A file may not contain more than the specified number of classes
@@ -41,5 +41,5 @@ export default {
   'prefer-const': true,
   // Requires or disallows trailing commas in array and object literals, destructuring assignments, function
   // and tuple typings, named imports and function parameters.
-  'trailing-comma': [true, {'multiline': 'always', 'singleline': 'never'}],
+  'trailing-comma': [true, {multiline: 'always', singleline: 'never'}],
 };

@@ -6,7 +6,7 @@ import spaceBeforeFunctionParen from './rule-helpers/space-before-function-paren
 
 export default {
   // Enforces vertical alignment.
-  'align': true,
+  align: true,
   // Requires using either ‘T[]’ or ‘Array' for arrays.
   'array-type': false,
   // Requires parentheses around the parameters of arrow function definitions.
@@ -24,7 +24,7 @@ export default {
   // Enforces documentation for important items be filled out.
   'completed-docs': false,
   // Enforces UTF-8 file encoding.
-  'encoding': true,
+  encoding: true,
   // Enforces a certain header comment for all files, matched by a regular expression.
   'file-header': false,
   // Ensures proper spacing between import statement keywords
@@ -62,7 +62,7 @@ export default {
   // Disallows multiple variable definitions in the same declaration statement.
   'one-variable-per-declaration': true,
   // Requires that import statements be alphabetized.
-  'ordered-imports': true,
+  'ordered-imports': false,
   // Do not warn for class methods that do not use ‘this’.
   'prefer-function-over-method': false,
   // Prefer foo(): void over foo: () => void in interfaces and types.
@@ -74,9 +74,9 @@ export default {
   // Prefer return; in void functions and return undefined; in value-returning functions.
   'return-undefined': true,
   // Requires single or double quotes for string literals.
-  'quotemark': [true, 'single', 'jsx-double', 'avoid-escape'],
+  quotemark: [true, 'single', 'jsx-double', 'avoid-escape'],
   // Enforces consistent semicolon usage at the end of every statement.
-  'semicolon': [true, 'always', 'ignore-interfaces'],
+  semicolon: [true, 'always', 'ignore-interfaces'],
   // Require or disallow a space before function parenthesis
   'space-before-function-paren': spaceBeforeFunctionParen,
   // Checks whether the final clause of a switch statement ends in break;.
@@ -86,7 +86,7 @@ export default {
   // Checks variable names for various errors.
   'variable-name': [true, 'ban-keywords', 'check-format', 'allow-pascal-case', 'allow-leading-underscore'],
   // Enforces whitespace style conventions.
-  'whitespace': [
+  whitespace: [
     true,
     'check-branch',
     'check-decl',

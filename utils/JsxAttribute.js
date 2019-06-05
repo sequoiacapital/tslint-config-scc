@@ -26,16 +26,16 @@ function getStringLiteral(node) {
         throw new Error('The node must be a JsxAttribute collected by the AST parser.');
     }
     var initializer = node == null ? null : node.initializer;
-    if (!initializer) {
+    if (!initializer) { // <tag attribute/>
         return '';
     }
-    else if (TypeGuard_1.isStringLiteral(initializer)) {
+    else if (TypeGuard_1.isStringLiteral(initializer)) { // <tag attribute='value' />
         return initializer.text.trim();
     }
-    else if (TypeGuard_1.isJsxExpression(initializer) && TypeGuard_1.isStringLiteral(initializer.expression)) {
+    else if (TypeGuard_1.isJsxExpression(initializer) && TypeGuard_1.isStringLiteral(initializer.expression)) { // <tag attribute={'value'} />
         return (initializer.expression).text;
     }
-    else if (TypeGuard_1.isJsxExpression(initializer) && !initializer.expression) {
+    else if (TypeGuard_1.isJsxExpression(initializer) && !initializer.expression) { // <tag attribute={} />
         return '';
     }
     else {

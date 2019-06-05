@@ -9,11 +9,11 @@ export default {
   // Warns for an awaited value that is not a Promise.
   'await-promise': true,
   // Bans the use of specific functions or global methods.
-  'ban': false,
+  ban: false,
   // Enforces braces for `if`/`for`/`do`/`while` statements.
-  'curly': true,
+  curly: true,
   // Requires a `for ... in` statement to be filtered with an `if` statement.
-  'forin': true,
+  forin: true,
   // Disallows importing the specified modules directly via `import` and `require`.
   // Instead only sub modules may be imported from that module.
   'import-blacklist': false,
@@ -87,7 +87,7 @@ export default {
   // Enforces the use of the ES2015 object spread operator over Object.assign() where appropriate.
   'prefer-object-spread': true,
   // Requires the radix parameter to be specified when calling `parseInt`.
-  'radix': true,
+  radix: true,
   // When adding two variables, operands must both be of type number or of type string.
   'restrict-plus-operands': true,
   // Usage of &amp;&amp; or || operators should be with boolean operands and

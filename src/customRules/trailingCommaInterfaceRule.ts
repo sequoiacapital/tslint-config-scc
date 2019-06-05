@@ -20,13 +20,13 @@ export class Rule extends Lint.Rules.AbstractRule {
 
   /* tslint:disable:object-literal-sort-keys */
   public static metadata: Lint.IRuleMetadata = {
-    'ruleName': 'trailing-comma-interface',
-    'description': 'Enforce trailing commas in interface properties.',
-    'rationale': 'Our team prefers traling commas over trailing semicolons.',
-    'optionsDescription': 'Not configurable.',
-    'options': null,
-    'type': 'typescript',
-    'typescriptOnly': true,
+    ruleName: 'trailing-comma-interface',
+    description: 'Enforce trailing commas in interface properties.',
+    rationale: 'Our team prefers traling commas over trailing semicolons.',
+    optionsDescription: 'Not configurable.',
+    options: null,
+    type: 'typescript',
+    typescriptOnly: true,
   };
   /* tslint:enable:object-literal-sort-keys */
 
